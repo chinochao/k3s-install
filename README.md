@@ -15,6 +15,11 @@ Join other masters
 k3sup join --ip 192.168.2.232 --user root --k3s-version v1.21.0+k3s1 --server-user root --server-ip 192.168.2.231 --server
 k3sup join --ip 192.168.2.233 --user root --k3s-version v1.21.0+k3s1 --server-user root --server-ip 192.168.2.231 --server
 ```
+Workers label
+```
+kubectl label node ccnet-worker-03 node-role.kubernetes.io/worker=worker
+```
+
 
 Admin Dashboard
 ```
